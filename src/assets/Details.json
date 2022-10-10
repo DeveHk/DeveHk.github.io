@@ -45,7 +45,13 @@
                 "uptitle": "SQL & DATABASES",
                 "title": "Database Queries to One Table (part 1)",
                 "content": "This is an excerpt from the Mondial Database thar widely...",
-                "theme": "red"
+                "theme": "yellow"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "blue"
             },
             {
                 "uptitle": "SQL & DATABASES",
@@ -57,13 +63,25 @@
                 "uptitle": "SQL & DATABASES",
                 "title": "Database Queries to One Table (part 1)",
                 "content": "This is an excerpt from the Mondial Database thar widely...",
-                "theme": "red"
+                "theme": "yellow"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "blue"
             },
             {
                 "uptitle": "SQL & DATABASES",
                 "title": "Database Queries to One Table (part 1)",
                 "content": "This is an excerpt from the Mondial Database thar widely...",
                 "theme": "red"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "yellow"
             }
         ],
         "projects":[
@@ -82,6 +100,22 @@
             {
                 "src":"",
                 "theme":"rgb(127,127,127)"
+            },
+            {
+                "src":"",
+                "theme":"#d90429"
+            },
+            {
+                "src":"",
+                "theme":"#333d29"
+            },
+            {
+                "src":"",
+                "theme":"f72585"
+            },
+            {
+                "src":"",
+                "theme":"f2cc8f"
             }
         ]
     }
