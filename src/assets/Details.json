@@ -1,0 +1,88 @@
+{
+    "theme": {
+        "colors": {
+            "bg": "rgb(29,29,29)",
+            "teal1": "rgb(8,253,216)",
+            "teal2": "rgb(1,255,233)",
+            "red": "rgb(188,32,69)",
+            "yellow": "rgb(255,165,0)",
+            "blue": "rgb(8,253,216)"
+        }
+    },
+    "data": {
+        "Portfolio": {
+            "title": "My PortFolio",
+            "p": [
+                "A small gallery of recent projects chosen by me. I've done them all together with amazing people from companies around the globe. It's only a drop in the ocean compared to the entire list.",
+                "Interested to see some more? Visit  +https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#my_work  page."
+            ],
+            "btn": "See more !"
+        },
+        "About": {
+            "title": "Me, Myself and I",
+            "p": [
+                "Since Adobe Flash was a complete innovation, alongside with CSS 1.0 and HTML 4.01 as standards of the current web I've been passionate about web.",
+                "For over a decade I had many opportunities to work in a vast spectrum of web technologies what let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people",
+                "I currently work remotely with a selected freelance client base being open for new opportunities."
+            ]
+        },
+        "Contact": {
+            "title": "Contact me",
+            "p": [
+                "I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.",
+                "For over a decade I had many opportunities to work in a vast spectrum of web technologies what let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people"
+            ],
+            "btn": "Send message!"
+        },
+        "blogs": [
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "red"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "red"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "red"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "red"
+            },
+            {
+                "uptitle": "SQL & DATABASES",
+                "title": "Database Queries to One Table (part 1)",
+                "content": "This is an excerpt from the Mondial Database thar widely...",
+                "theme": "red"
+            }
+        ],
+        "projects":[
+            {
+                "src":"",
+                "theme":"rgb(14,98,194)"
+            },
+            {
+                "src":"",
+                "theme":"rgb(45,50,55)"
+            },
+            {
+                "src":"",
+                "theme":"rgb(245,245,245)"
+            },
+            {
+                "src":"",
+                "theme":"rgb(127,127,127)"
+            }
+        ]
+    }
+}
