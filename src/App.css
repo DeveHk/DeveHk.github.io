@@ -104,28 +104,43 @@ body {
 
 
 .button::before {
-  transition: all 0.8s;
+  transition: all 0.4s;
   content: '';
   position: absolute;
+  height:2.5rem;
   bottom: 0;
+  transform: translate(-10px,-2px) skew(30deg);
   left: 0;
   width: 0%;
-  height: 2.5rem;
- border-bottom-right-radius: 50%;
- border-top-right-radius: 50%;
- 
-  background-color: #0cf;
-  z-index: -2;
+ opacity: 0.2;
+  background-color: rgb(8,252,215);
+  z-index: 1;
+}
+
+.button::after {
+  transition: all 0.4s;
+  content: '';
+  position: absolute;
+  height:2.5rem;
+  bottom: 0;
+  transform: translate(10px,-2px) skew(30deg);
+  right: 0;
+  width: 0%; 
+ opacity: 0.2;
+  background-color: rgb(188, 32, 69);
+  z-index: 1;
 }
 
 
 
 .button:hover {
-  color: black;
+  color: white;
 }
-
+.button:hover::after {
+  width: 60%;
+}
 .button:hover::before {
-  width: 160%;
+  width: 60%;
 }
 .link:hover{
   color: rgb(8, 253, 216);
