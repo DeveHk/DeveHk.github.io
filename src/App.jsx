@@ -13,7 +13,7 @@ import Ham from './assets/Components/Nav/Ham'
 function App() {
 //
   return (
-    <div className=" overflow-hidden lg:grid lg:grid-cols-10">
+    <div className="  lg:grid lg:grid-cols-10 pb-36">
       <div className="lg:hidden">
         <Ham/>
       </div>
