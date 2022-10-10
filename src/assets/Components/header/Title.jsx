@@ -1,18 +1,12 @@
 import React, { useEffect, useRef } from 'react'
-import useScrollAnimation from '../../Hooks/useScrollAnimation'
+import useScrollAnimation from '../../Hooks/useScrollFunc'
 import Txt from '../Others/Txt'
 const Title = () => {
 
   return (
     <div className="px-5 md:px-10 relative">
       <A />
-      <div className="text-4xl h-[150x] md:h-[200px] font-extrabold Raleway-900 tracking-wider leading-10 " >
-        <div className=""><Text text={'Hi,'} /> </div>
-        <div className=""><Text text={"I'm "} />
-          <span className=""><Text text={"Harsh,"} />   </span>
-        </div>
-        <div className=""><Text text={"web developer"} /></div>
-      </div>
+       <Text text={"Hi, /I'm Harsh, /web developer"} />
       <div className="font-thin text-gray-400 mt-6 tracking-wider">
         Full Stack Developer / Static site Expert
       </div>
@@ -38,15 +32,48 @@ const A = () => {
   )
 }
 const Text = ({ text }) => {
-  const up = useScrollAnimation('letters')
-
+  const target=useRef("")
+  const func=()=>{
+    
+    const Chlds=target.current.children
+    console.dir(Chlds.length)
+    for(let i=0;i<Chlds.length;i++){
+      Chlds[i].style.animationDelay=`${i*0.1}s`
+      console.dir(Chlds[i].style)
+      Chlds[i].classList.add('letters');
+      
+    }
+  }
+    useEffect(
+        ()=>{
+          let options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0
+          }
+          const callback = (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.intersectionRatio > 0) {
+                func()
+                observer.unobserve(entry.target);
+              }               
+          })
+            
+          }
+          let observer = new IntersectionObserver(callback, options);
+          observer.observe(target.current);
+        
+        },[]
+      )
   return (
-    <div className="text-white text-[2.5rem] md:text-5xl lg:text-6xl R-800 inline-block" ref={up}>
+    <div className=" font-extrabold Raleway-900 tracking-[4px] leading-10  text-white md:text-5xl lg:text-6xl R-800 inline-block" ref={target}>
       {text.split("").map(
         (c) => {
 
           if (c == ' ')
-            c = <div className="opacity-0">_</div>
+          return <span className="invisible">_</span>
+            if (c == '/')
+            return <br/>
           return (
             <Leter c={c} />
           )
@@ -58,7 +85,10 @@ const Text = ({ text }) => {
 }
 
  const Leter = ({ c }) => {
-  return (<div className="hover:text-[rgb(8,253,216)] inline-block" onMouseOver={(e) => {
+  return (<div className="text-[42px] pb-4 md:text-6xl md:pd-8 lg:text-[80px] hover:text-[rgb(8,253,216)]  opacity-0 inline-block" onMouseOver={(e) => {
+    e.target.style.animationDelay='0s'
+    e.target.classList.remove("letters");
+    e.target.classList.remove("opacity-0");
     e.target.classList.add("text");
     setTimeout(
       () => { e.target.classList.remove("text") }, 800

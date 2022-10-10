@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-const useScrollAnimation = (clas) => {
+const useScrollAnimation = (func) => {
     const target=useRef("")
     useEffect(
         ()=>{
@@ -12,7 +12,7 @@ const useScrollAnimation = (clas) => {
           const callback = (entries, observer) => {
             entries.forEach((entry) => {
               if (entry.intersectionRatio > 0) {
-                entry.target.classList.add(clas);
+                func()
                 observer.unobserve(entry.target);
               }               
           })
