@@ -3,6 +3,7 @@
 body {
   background-color: rgb(29, 29, 29);
   position: relative;
+  color: white;
   z-index: -10;
 }
 .cursive{
@@ -220,16 +221,14 @@ body {
 
 .slide-top{  
   position: relative;
-  animation: slide 0.8s ease-in 1 0s forwards;
+  animation: slide 0.5s ease-in 1 0s forwards;
 }
 @keyframes slide {
   0%{
-    visibility: hidden;
+    opacity: 0;
     transform: scale(1);
     top:150px
   }
-
-
   100%{
     transform: scale(1);
     top:0px;

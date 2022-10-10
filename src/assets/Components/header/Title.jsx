@@ -2,12 +2,24 @@ import React, { useEffect, useRef } from 'react'
 import useScrollAnimation from '../../Hooks/useScrollFunc'
 import Txt from '../Others/Txt'
 const Title = () => {
-
+const ti=useRef("")
+useEffect(
+  ()=>{
+  setTimeout(
+    ()=>{
+      ti.current.classList.remove('opacity-0')
+    },2200
+  )  
+  ti.current.style.animationDelay="2.1s"
+  ti.current.classList.add('slide-top')
+}
+  ,[]
+)
   return (
     <div className="px-5 md:px-10 relative">
       <A />
        <Text text={"Hi, /I'm Harsh, /web developer"} />
-      <div className="font-thin text-gray-400 mt-6 tracking-wider">
+      <div className="font-thin text-gray-400 mt-6 opacity-0 tracking-wider" ref={ti}>
         Full Stack Developer / Static site Expert
       </div>
     </div>
