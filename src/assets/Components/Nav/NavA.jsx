@@ -6,9 +6,7 @@ import Socials from './Socials'
 const NavA = () => {
   return (
     <div className="h-[100vh]  black1-bg  w-[100%] grid grid-row-10">
-        <div className=" row-span-3 ">
-            <Logo/>
-        </div>
+
         <div className="row-span-5 flex flex-col mx-2 justify-center items-center grey  flex-wrap">
             <Links txt="About"/>
             <Links txt="My Skills"/>
