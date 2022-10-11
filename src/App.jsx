@@ -10,6 +10,8 @@ import BlogArea from './assets/Components/BlogCard/BlogArea'
 import ProArea from './assets/Components/ProjectsSection/ProArea'
 import NavA from './assets/Components/Nav/NavA'
 import Ham from './assets/Components/Nav/Ham'
+
+import Me from './assets/Components/Me/Me'
 function App() {
 //
   return (
@@ -26,7 +28,7 @@ function App() {
       <Fullhead/>
     <Card props={data.data.Portfolio}/>
     <ProArea/>
-    <Card props={data.data.About}/>
+    <Me props={data.data.About}/>
     <BlogArea/>
     <Card props={data.data.Contact}/>
     </div>
