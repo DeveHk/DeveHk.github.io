@@ -4,11 +4,34 @@ import data from  "../../Details.json"
 import Txt from '../Others/Txt'
 
 const ProArea = () => {
+ /* const target=useRef("")
+  useEffect(
+    ()=>{
+      let options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
+      }
+      const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0) {
+            func()
+            observer.unobserve(entry.target);
+          }               
+      })
+        
+      }
+      let observer = new IntersectionObserver(callback, options);
+      observer.observe(target.current);
+    
+    },[]
+  )
+*/
   return (
    <div className="relative pt-80">
     <A/>
     <div className="text-[150px] md:text-[300px] lg:text-[400px] grey h-[400px] flex items-center absolute top-10 -z-10">Works</div>
-    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5" >
     {
         data.data.projects.map(
             (pro)=>{
