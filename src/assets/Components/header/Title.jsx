@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import useScrollAnimation from '../../Hooks/useScrollFunc'
 import Txt from '../Others/Txt'
+import './header.scss'
 const Title = () => {
 const ti=useRef("")
 useEffect(
@@ -18,7 +19,7 @@ useEffect(
   return (
     <div className="px-5 md:px-10 relative">
       <A />
-       <Text text={"Hi, /I'm Harsh, /web developer"} />
+       <Text text={"Hi, /I'm /web developer"} />
       <div className="font-thin text-gray-400 mt-6 opacity-0 tracking-wider" ref={ti}>
         Full Stack Developer / Static site Expert
       </div>
@@ -52,7 +53,7 @@ const Text = ({ text }) => {
     for(let i=0;i<Chlds.length;i++){
       Chlds[i].style.animationDelay=`${i*0.1}s`
       console.dir(Chlds[i].style)
-      Chlds[i].classList.add('letters');
+      Chlds[i].classList.add('letter');
       
     }
   }

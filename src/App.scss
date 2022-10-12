@@ -193,6 +193,17 @@ body {
   border-color: rgb(1, 255, 233);
 }
 
+.red-s:hover {
+  box-shadow: 0px 0px 10px 6px rgb(188, 32, 69);
+}
+
+.blue-s:hover {
+  box-shadow: 0px 0px 10px 6px rgb(8, 253, 216);
+}
+
+.yellow-s:hover {
+  box-shadow: 0px 0px 10px 6px rgb(255, 165, 0);
+}
 .red-b {
   border-color: rgb(188, 32, 69);
 }
@@ -204,6 +215,7 @@ body {
 .yellow-b {
   border-color: rgb(255, 165, 0);
 }
+
 
 .black-b {
   border-color: rgb(42, 40, 40);
@@ -232,24 +244,65 @@ body {
 
 /*text animation*/
 
-
-
+.slide:hover{
+  transform: scale(1.5);
+}
+@media only screen and (min-width: 800px){
 .slide-top{  
   position: relative;
-  animation: slide 0.5s ease-in 1 0s forwards;
+  animation: slide 0.5s ease-in 1 0s none;
 }
 @keyframes slide {
   0%{
     opacity: 0;
     transform: scale(1);
+    box-shadow: 0px 0px 10px 6px rgb(8, 253, 216);
+      
     top:150px
   }
   100%{
     transform: scale(1);
+    box-shadow: 0px 0px 15px 6px rgb(8, 253, 216);
     top:0px;
   }
 }
-
+}
+@media only screen and (max-width: 800px){
+  .slide-left{  
+    position: relative;
+    animation: slide-l 0.6s ease-in 1 0s none;
+  }
+  @keyframes slide-l {
+    0%{
+      opacity: 0;
+      transform: scale(1);
+      box-shadow: 0px 0px 10px 6px rgb(8, 253, 216);
+      left:150px
+    }
+    100%{
+      transform: scale(1);
+      box-shadow: 0px 0px 15px 6px rgb(8, 253, 216);
+      left:0px;
+    }
+  }
+  .slide-right{  
+    position: relative;
+    animation: slide-r 0.6s ease-in 1 0s none;
+  }
+  @keyframes slide-r {
+    0%{
+      opacity: 0;
+      transform: scale(1);
+      box-shadow: 0px 0px 10px 6px rgb(8, 253, 216);
+      right:150px;
+    }
+    100%{
+      transform: scale(1);
+      box-shadow: 0px 0px 15px 6px rgb(8, 253, 216);
+      right:0px;
+    }
+  }
+  }
 .letters{
   white-space: nowrap;
   position: relative;
@@ -261,6 +314,7 @@ body {
   0% {
     transform: scale(1);
     transform: rotate(-0.2turn);
+    box-shadow: 0px 0px 15px 6px rgb(8, 253, 216);
     opacity: 0;
   }
 

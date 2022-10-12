@@ -3,10 +3,13 @@ import Card from '../MajorCards/Card'
 import CanvasBall from './CanvasBall'
 const Me = ({props}) => {
   return (
-    <div className="flex flex-col md:flex-row items-center">
-
+    <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
+          <div className="lg:col-span-1">
          <Card props={props}/>
+         </div>
+         <div className="lg:col-span-1 flex justify-center items-center">
          <CanvasBall/>
+         </div>
     </div>
    
     

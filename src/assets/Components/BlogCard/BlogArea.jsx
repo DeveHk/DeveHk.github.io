@@ -4,6 +4,7 @@ import Txt from '../Others/Txt'
 import Blogcard from './Blogcard'
 
 const BlogArea = () => {
+    let n=0;
     return (
         <div className="relative pt-80">
             <A/>
@@ -12,6 +13,8 @@ const BlogArea = () => {
                 {
                     data.data.blogs.map(
                         (blog) => {
+                            blog.at=n;
+                            n++;
                             return (
                             <div className="mt-10 mx-4">
                             <Blogcard props={blog} />

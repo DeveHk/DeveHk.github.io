@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.scss'
 import Fullhead from './assets/Components/header/Fullhead'
 import Card from './assets/Components/MajorCards/Card'
 import Crd from './assets/Components/MajorCards/Crd'
