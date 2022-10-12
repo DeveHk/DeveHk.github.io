@@ -63,13 +63,15 @@
 }
 
 .drop{
-  
+  transition: all 1s;
   animation: tdrop 800ms alternate ease-out forwards;
+}
+.drop:hover{
+  transform: scale(1.2);
 }
 @keyframes tdrop{
   0%{
     opacity: 0;
-
     transform: translateY(-100px);
   }
   100%{

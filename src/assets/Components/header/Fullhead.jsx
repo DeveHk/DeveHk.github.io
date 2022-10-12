@@ -18,7 +18,7 @@ const Fullhead = () => {
   )
 
   return (
-    <div className='w-full overflow-hidden  py-32  h-[100vh] md:pt-36   frame' >
+    <div className='w-full overflow-hidden  py-32  h-[100vh] md:pt-36 flex justify-center flex-col' >
       <div className="absolute top-10 left-7">
         <Txt txt='HTML' />
       </div>
