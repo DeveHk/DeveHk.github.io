@@ -10,7 +10,7 @@ const Contact = ({ text }) => {
                 }, 2200
             )
             ti.current.style.animationDelay = "2.1s"
-            ti.current.classList.add('slide-top')
+            ti.current.classList.add('slide-t')
         },[]
     )
     return (

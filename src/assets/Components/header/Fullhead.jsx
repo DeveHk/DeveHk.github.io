@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react'
 import Txt from '../Others/Txt'
 import './Animation.css'
 import Contact from './Contact'
+
+import './header.scss'
 import Title from './Title'
 
 const Fullhead = () => {

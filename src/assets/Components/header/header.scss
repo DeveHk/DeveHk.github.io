@@ -8,9 +8,8 @@
   font-family: "Rocher", cursive;
   font-family: 'Rocher';
   display: inline-block;
-  font-size: 120px;
   letter-spacing: 10px;
-  transform: rotateZ(1deg);
+  transform: rotateZ(5deg);
 }
 
 
@@ -24,6 +23,7 @@
 @keyframes bgrubberband {
 
   0% {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px rgb(1, 255, 233), 0 0 40px rgb(1, 255, 233), 0 0 50px rgb(1, 255, 233), 0 0 60px rgb(1, 255, 233), 0 0 70px rgb(1, 255, 233);
     transform: scale(1);
     transform: rotate(-0.2turn);
     
@@ -53,19 +53,41 @@
   }
 
   100% {
+    text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
     transform: scaleX(0.88) scaleY(1);
     opacity: 1;
   }
 }
+.tx{
+  text-shadow: 0 0 5px #fff, 0 0 20px rgb(255, 165, 0);
+}
 
-.text {
+.drop{
+  
+  animation: tdrop 800ms alternate ease-out forwards;
+}
+@keyframes tdrop{
+  0%{
+    opacity: 0;
+
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px), rotate(10deg);
+  }
+}
+
+.tex {
   position: relative;
+  text-shadow: 0 0 20px #fff, 0 0 30px rgb(188, 32, 69), 0 0 40px rgb(188, 32, 69), 0 0 50px rgb(188, 32, 69), 0 0 60px rgb(188, 32, 69), 0 0 70px rgb(188, 32, 69), 0 0 80px rgb(188, 32, 69);
   animation: rubberband 800ms alternate ease-out;
 }
 
 @keyframes rubberband {
   0% {
     transform: scaleX(1);
+    
   }
 
   40% {
@@ -92,21 +114,19 @@
     transform: scaleX(1) scaleY(1);
   }
 }
-
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+.slide-t{  
+  position: relative;
+  animation: slide 0.5s ease-in 1 0s none;
 }
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+@keyframes slide {
+  0%{
+    opacity: 0;
+    transform: scale(1);
+      
+    top:150px
   }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  100%{
+    transform: scale(1);
+    top:0px;
   }
 }
