@@ -1,4 +1,18 @@
 
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+.styled-name {
+  font-family: "Rocher", cursive;
+  font-family: 'Rocher';
+  display: inline-block;
+  font-size: 120px;
+  letter-spacing: 10px;
+  transform: rotateZ(1deg);
+}
+
 
 
 .letter{
@@ -12,7 +26,7 @@
   0% {
     transform: scale(1);
     transform: rotate(-0.2turn);
-    box-shadow: 0px 0px 15px 6px rgb(193, 193, 13);
+    
     opacity: 0;
   }
 
@@ -76,5 +90,23 @@
 
   100% {
     transform: scaleX(1) scaleY(1);
+  }
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }

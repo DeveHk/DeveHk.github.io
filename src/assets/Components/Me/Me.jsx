@@ -7,7 +7,7 @@ const Me = ({props}) => {
           <div className="lg:col-span-1">
          <Card props={props}/>
          </div>
-         <div className="lg:col-span-1 flex justify-center items-center">
+         <div className="lg:col-span-1 flex  items-center lg:ml-20 ml-10">
          <CanvasBall/>
          </div>
     </div>

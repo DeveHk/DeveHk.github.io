@@ -98,9 +98,9 @@ const Text = ({ text }) => {
 }
 
  const Leter = ({ c }) => {
-  return (<div className="text-[42px] pb-4 md:text-6xl md:pd-8 lg:text-[80px] hover:text-[rgb(8,253,216)]  opacity-0 inline-block" onMouseOver={(e) => {
+  return (<div className="text-[42px] pb-4 md:text-6xl md:pd-8 lg:text-[80px] hover:text-[rgb(8,253,216)]  opacity-0 inline-block " onMouseOver={(e) => {
     e.target.style.animationDelay='0s'
-    e.target.classList.remove("letters");
+    e.target.classList.remove("letter");
     e.target.classList.remove("opacity-0");
     e.target.classList.add("text");
     setTimeout(
