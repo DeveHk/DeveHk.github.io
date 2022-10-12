@@ -3,10 +3,12 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 import Ball from './Ball'
+import useScrollAnimation from '../../Hooks/useScrollAnimation'
 
 const ProCard = ({theme, src}) => {
-    const card=useRef("")
+    const card=useScrollAnimation(['slide-t'],['opacity-0'])
     const [ball,setBall]=useState(false)
+
     useEffect(
         ()=>{
             card.current.style.backgroundColor=`${theme}`
@@ -22,11 +24,9 @@ const ProCard = ({theme, src}) => {
             )
         },[]
     )
-   /*<div className="w-full h-full bg-slate-800 screen" ref={screen}>
-        <Ball/>
-    </div> */
+
   return (
-   <div className="bg-gray-400 aspect-square card flex justify-center items-center" ref={card}>
+   <div className="aspect-square  card flex justify-center items-center opacity-0"  ref={card}>
     <a href="" className="">
     <Ball props={ball}/>
     </a>

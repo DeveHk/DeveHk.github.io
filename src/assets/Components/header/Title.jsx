@@ -16,7 +16,7 @@ useEffect(
   ,[]
 )
   return (
-    <div className="px-5 md:px-10 relative">
+    <div className=" relative">
       <A />
       
        <Text text={"Hi,. /I'm. Harsh ./web. developer"} />
@@ -29,6 +29,9 @@ useEffect(
 const A = () => {
   return (
     <>
+    <div className="absolute -top-[100px] left-7">
+        <Txt txt='HTML' />
+      </div>
      <div className="absolute -top-[30px]">  
     <Txt txt='p'/>
     </div>
@@ -100,7 +103,7 @@ const Text = ({ text }) => {
           if (p == '/')
           return <br/>
           if (p == '.')
-          return <div className="invisible inline">__</div>
+          return <div className="invisible inline">_</div>
           return (
             <Leter c={p} />
           )

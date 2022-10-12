@@ -1,39 +1,30 @@
 .ud{
     position: relative;
-  animation: bgrubberband 0.5s alternate ease-out infinite forwards;
+    text-shadow: -8px -5px 0px rgb(255, 165, 0), 0 0 30px rgb(188, 32, 69);
+    transform: scaleX(1) scaleY(1);
 }
-@keyframes bgrubberband {
+@keyframes bgrubberban {
 
-    0% {
-      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px rgb(1, 255, 233), 0 0 40px rgb(1, 255, 233), 0 0 50px rgb(1, 255, 233), 0 0 60px rgb(1, 255, 233), 0 0 70px rgb(1, 255, 233);
+    0% {  
+
+        text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
       transform: scale(1);
     }
-  
-    40% {
-      transform: scale(1.4);
+    25%{
+        text-shadow: 0 0 5px #fff,  0 0 30px rgb(255, 165, 0);
+      transform: scaleX(1) scaleY(1);
     }
-  
-    55% {
-  
-      transform: scale(0.95);
+    50%{
+        text-shadow: 0 0 5px #fff,  0 0 30px rgb(8, 253, 216);
+      transform: scaleX(1) scaleY(1);
     }
-  
-    65% {
-  
-      transform: scale(1.2);
+    75%{
+        text-shadow: 0 0 5px #fff,  0 0 30px rgb(1, 255, 233);
+        transform: scaleX(1) scaleY(1);
+        opacity: 1;
     }
-  
-    75% {
-      transform: scale(1);
-    }
-  
-    90% {
-      transform: scaleX(0.93) scaleY(0.95);
-    }
-  
     100% {
       text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
-      transform: scaleX(0.88) scaleY(1);
-      opacity: 1;
+      transform: scaleX(1) scaleY(1);
     }
   }

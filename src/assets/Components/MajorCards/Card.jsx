@@ -6,12 +6,11 @@ import Title from './Title'
 const Card = ({props}) => {
 
   return (
-   <div className="relative">
+   <div className="relative px-6 md:pl-20 ">
     <A/>
-    <div className="">
-        <Title text={props.title}/>
-    </div>
-    <div className="space-y-2 tracking-wide font-serif px-10">
+    <Title text={props.title}/>
+    <div className="grid lg:grid-cols-3">
+    <div className="space-y-2   tracking-wide font-serif  col-span-2">
         {props.p.map(
             
             (p)=>{
@@ -34,8 +33,11 @@ const Card = ({props}) => {
             }
         )}
     </div>
-    <div className="">
-        {props.btn && <Btn text={props.btn}/>}
+    {props.btn &&
+    <div className="col-span-1 flex lg:justify-end">
+         <Btn text={props.btn}/>
+    </div>
+    }
     </div>
    </div>
   )

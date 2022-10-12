@@ -1,0 +1,15 @@
+.slide-t{  
+    position: relative;
+    animation: slide 0.5s ease-in 1 0s none;
+  }
+  @keyframes slide {
+    0%{
+      opacity: 0;
+      transform: scale(1);
+      top:150px
+    }
+    100%{
+      transform: scale(1);
+      top:0px;
+    }
+  }

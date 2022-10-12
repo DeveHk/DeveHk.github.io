@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Txt from '../Others/Txt'
-import './Animation.css'
+import './Animation.scss'
 import Contact from './Contact'
 
 import './header.scss'
@@ -18,10 +18,8 @@ const Fullhead = () => {
   )
 
   return (
-    <div className='w-full overflow-hidden  py-32  h-[100vh] md:pt-36 flex justify-center flex-col' >
-      <div className="absolute top-10 left-7">
-        <Txt txt='HTML' />
-      </div>
+    <div className='w-full overflow-hidden md:px-20 pl-6 py-32  h-[100vh] md:pt-36 flex justify-center flex-col' >
+      
       <Title />
       <Contact text={'Contact me!'} />
     </div>

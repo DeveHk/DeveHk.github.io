@@ -14,7 +14,6 @@ const Title = ({ text, theme}) => {
     console.dir(Chlds.length)
     for(let i=0;i<Chlds.length;i++){
       Chlds[i].style.animationDelay=`${i*0.1}s`
-      console.dir(Chlds[i].style)
       Chlds[i].classList.add('letters');
       
     }
@@ -41,7 +40,7 @@ const Title = ({ text, theme}) => {
         },[]
       )
   return (
-    <div className="text-5xl md:text-6xl R-800 pb-10 pt-5 px-10 " >
+    <div className="text-5xl md:text-6xl R-800 pb-10 pt-5  " >
       <div className={theme ||`teal1`} ref={target} >
         {text.split("").map(
           (c) => {

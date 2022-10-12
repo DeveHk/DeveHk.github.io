@@ -23,7 +23,7 @@
 @keyframes bgrubberband {
 
   0% {
-    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px rgb(1, 255, 233), 0 0 40px rgb(1, 255, 233), 0 0 50px rgb(1, 255, 233), 0 0 60px rgb(1, 255, 233), 0 0 70px rgb(1, 255, 233);
+    text-shadow: 0 0 5px #fff,0 0 30px rgb(1, 255, 233), 0 0 40px rgb(1, 255, 233), 0 0 50px rgb(1, 255, 233), 0 0 60px rgb(1, 255, 233), 0 0 70px rgb(1, 255, 233);
     transform: scale(1);
     transform: rotate(-0.2turn);
     
@@ -53,36 +53,52 @@
   }
 
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
+    text-shadow: 0 0 1px #fff, 0 0 5px rgb(188, 32, 69), 0 0 5px rgb(255, 165, 0);
     transform: scaleX(0.88) scaleY(1);
     opacity: 1;
   }
 }
 .tx{
-  text-shadow: 0 0 5px #fff, 0 0 20px rgb(255, 165, 0);
+  text-shadow: 0 0 1px #fff, 0 0 5px rgb(188, 32, 69), 0 0 5px rgb(255, 165, 0);
+    transform: scaleX(0.88) scaleY(1);
 }
-
 .drop{
   transition: all 1s;
   animation: tdrop 800ms alternate ease-out forwards;
 }
-.drop:hover{
-  transform: scale(1.2);
-}
+
 @keyframes tdrop{
   0%{
     opacity: 0;
     transform: translateY(-100px);
+  }  
+  15%{
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  40%{
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+  65%{
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(-20px);
   }
   100%{
     opacity: 1;
     transform: translateY(0px), rotate(10deg);
+
   }
 }
 
+
 .tex {
   position: relative;
-  text-shadow: 0 0 20px #fff, 0 0 30px rgb(188, 32, 69), 0 0 40px rgb(188, 32, 69), 0 0 50px rgb(188, 32, 69), 0 0 60px rgb(188, 32, 69), 0 0 70px rgb(188, 32, 69), 0 0 80px rgb(188, 32, 69);
+  text-shadow: 0 0 5px #fff, 0 0 5px rgb(188, 32, 69), 0 0 10px rgb(188, 32, 69), 0 0 15px rgb(188, 32, 69), 0 0 20px rgb(188, 32, 69), 0 0 25px rgb(188, 32, 69), 0 0 30px rgb(188, 32, 69);
   animation: rubberband 800ms alternate ease-out;
 }
 
