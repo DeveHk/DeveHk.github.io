@@ -29,7 +29,7 @@ const Ham = () => {
         <div className="fixed z-10 w-full hidden" ref={menu}>
         <NavA/>
       </div>
-      <div onClick={handelOnclick} className=" fixed z-10 right-5 top-5">
+      <div onClick={handelOnclick} className=" fixed z-10 right-5 top-5 bg-slate- p-1 rounded-lg bg-[#6d68753d] ">
         <div className="h-10 space-y-[4.5px] pt-2 flex flex-col items-end">
           <div className=" w-12 bg-white h-[3px] rounded-[40%] l1 transition-all duration-75" ref={l1} />
           <div className=" w-10 bg-white h-[3px] rounded-[40%] l2 transition-all duration-75" ref={l2} />

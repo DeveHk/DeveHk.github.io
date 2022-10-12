@@ -1,0 +1,39 @@
+.ud{
+    position: relative;
+  animation: bgrubberband 0.5s alternate ease-out infinite forwards;
+}
+@keyframes bgrubberband {
+
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px rgb(1, 255, 233), 0 0 40px rgb(1, 255, 233), 0 0 50px rgb(1, 255, 233), 0 0 60px rgb(1, 255, 233), 0 0 70px rgb(1, 255, 233);
+      transform: scale(1);
+    }
+  
+    40% {
+      transform: scale(1.4);
+    }
+  
+    55% {
+  
+      transform: scale(0.95);
+    }
+  
+    65% {
+  
+      transform: scale(1.2);
+    }
+  
+    75% {
+      transform: scale(1);
+    }
+  
+    90% {
+      transform: scaleX(0.93) scaleY(0.95);
+    }
+  
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
+      transform: scaleX(0.88) scaleY(1);
+      opacity: 1;
+    }
+  }
