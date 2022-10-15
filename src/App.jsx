@@ -11,27 +11,29 @@ import NavA from './assets/Components/Nav/NavA'
 import Ham from './assets/Components/Nav/Ham'
 
 import Me from './assets/Components/Me/Me'
+import Canvs from './assets/Components/Others/Canvs'
 function App() {
-//
+  //
   return (
     <div className="  lg:flex  pb-36">
+      <Canvs/>
       <div className="lg:hidden">
-        <Ham/>
+        <Ham />
       </div>
       <div className="w-[680px] hidden lg:block z-20">
         <div className="lg:fixed w-[150px]">
-        <NavA/>
+          <NavA />
         </div>
       </div>
       <div className="space-y-2">
-      <Fullhead/>
-    <Card props={data.data.Portfolio}/>
-    <ProArea/>
-    <Me props={data.data.About}/>
-    <BlogArea/>
-    <Card props={data.data.Contact}/>
-    </div>
-   
+        <Fullhead />
+        <Card props={data.data.Portfolio} />
+        <ProArea />
+        <Me props={data.data.About} />
+        <BlogArea />
+        <Card props={data.data.Contact} />
+      </div>
+
     </div>
   )
 }
