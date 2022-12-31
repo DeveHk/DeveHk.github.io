@@ -16,7 +16,7 @@ function App() {
   //
   return (
     <div className="  lg:flex  pb-36">
-      <Canvs/>
+      
       <div className="lg:hidden">
         <Ham />
       </div>
