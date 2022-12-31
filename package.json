@@ -32,5 +32,17 @@
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8",
     "vite": "^3.1.0"
+  },
+  "description": "",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveHk/vite-react-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeveHk/vite-react-project/issues"
   }
 }
