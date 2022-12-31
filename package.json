@@ -1,5 +1,5 @@
 {
-  "homepage": "https://DeveHk.github.io/vite-react-project",
+  "homepage": "https://DeveHk.github.io/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -37,12 +37,12 @@
   "main": "vite.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeveHk/vite-react-project.git"
+    "url": "git+https://github.com/DeveHk/DeveHk.github.io"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DeveHk/vite-react-project/issues"
+    "url": "https://github.com/DeveHk/DeveHk.github.io/issues"
   }
 }
