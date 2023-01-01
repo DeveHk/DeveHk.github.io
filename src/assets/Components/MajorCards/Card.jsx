@@ -34,8 +34,8 @@ const Card = ({props}) => {
         )}
     </div>
     {props.btn &&
-    <div className="col-span-1 flex lg:justify-end">
-         <Btn text={props.btn}/>
+    <div className="col-span-1 flex lg:justify-end" >
+         <Btn text={props.btn} url={props.url}/>
     </div>
     }
     </div>

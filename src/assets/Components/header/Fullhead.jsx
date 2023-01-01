@@ -4,6 +4,7 @@ import './Animation.scss'
 import Contact from './Contact'
 
 import './header.scss'
+import Resume from './Resume'
 import Title from './Title'
 
 const Fullhead = () => {
@@ -18,10 +19,11 @@ const Fullhead = () => {
   )
 
   return (
-    <div className='w-full overflow-hidden md:px-20 pl-6 py-32  h-[100vh] md:pt-36 flex justify-center flex-col' >
+    <div className=' relative w-full overflow-hidden md:px-20 pl-6 py-32  h-[100vh] md:pt-36 flex justify-center flex-col' >
       
       <Title />
-      <Contact text={'Contact me!'} />
+      <Contact text={'Contact me!'}  />
+      <Resume/>
     </div>
   )
 }

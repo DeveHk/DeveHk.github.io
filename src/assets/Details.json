@@ -32,7 +32,8 @@
                 "I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.",
                 "For over a decade I had many opportunities to work in a vast spectrum of web technologies what let me gather a significant amount of various experience. Working for companies and individuals around the globe I met and learnt from amazing and ambitious people"
             ],
-            "btn": "Send message!"
+            "btn": "Send message!",
+            "url":"mailto:harsh.kumar.ug21@nsut.ac.in"
         },
         "blogs": [
             {
@@ -86,20 +87,24 @@
         ],
         "projects":[
             {
-                "src":"",
-                "theme":"rgb(14,98,194)"
+                "src":"src/assets/typoProject.png",
+                "theme":"rgb(14,98,194)",
+                "url":"https://speed-typo-game.netlify.app/"
             },
             {
-                "src":"",
-                "theme":"rgb(45,50,55)"
+                "src":"src/assets/docProject.png",
+                "theme":"rgb(45,50,55)",
+                "url":"https://doc-extracter.netlify.app/"
             },
             {
-                "src":"",
-                "theme":"rgb(245,245,245)"
+                "src":"src/assets/msbproject.png",
+                "theme":"rgb(245,245,245)",
+                "url":"https://mb-microsoft.netlify.app/"
             },
             {
-                "src":"",
-                "theme":"rgb(127,127,127)"
+                "src":"src/assets/spaceProject.png",
+                "theme":"rgb(127,127,127)",
+                "url":"https://space-site-frontend.netlify.app/"
             },
             {
                 "src":"",

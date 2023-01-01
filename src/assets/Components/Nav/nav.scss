@@ -2,29 +2,36 @@
     position: relative;
     text-shadow: -8px -5px 0px rgb(255, 165, 0), 0 0 30px rgb(188, 32, 69);
     transform: scaleX(1) scaleY(1);
+    animation:15s bgrubberban infinite ;
 }
 @keyframes bgrubberban {
 
     0% {  
-
-        text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
+        text-shadow: -5px -5px 10px #fff, 10px 10px 30px rgb(188, 32, 69);
       transform: scale(1);
     }
     25%{
-        text-shadow: 0 0 5px #fff,  0 0 30px rgb(255, 165, 0);
+        text-shadow: 5px -5px 10px #fff,  -10px 10px 30px rgb(255, 165, 0);
       transform: scaleX(1) scaleY(1);
     }
     50%{
-        text-shadow: 0 0 5px #fff,  0 0 30px rgb(8, 253, 216);
+        text-shadow: 5px 5px 10px #fff,  -10px -10px 30px rgb(188, 32, 69);
       transform: scaleX(1) scaleY(1);
     }
     75%{
-        text-shadow: 0 0 5px #fff,  0 0 30px rgb(1, 255, 233);
+        text-shadow: -5px 5px 10px #fff,  10px -10px 30px rgb(1, 255, 233);
         transform: scaleX(1) scaleY(1);
-        opacity: 1;
     }
     100% {
-      text-shadow: 0 0 5px #fff, 0 0 30px rgb(188, 32, 69);
-      transform: scaleX(1) scaleY(1);
+      text-shadow: -5px -5px 10px #fff, 10px 10px 30px rgb(188, 32, 69);
+      transform: scale(1);
     }
+  }
+  .social{
+    transition: transform 0.3s;
+  }
+  .social:hover{
+    transform: translate(8px,5px);
+    text-shadow: -8px -5px 0px rgb(255, 165, 0), 0 0 30px rgb(188, 32, 69);
+    
   }

@@ -28,14 +28,14 @@ const ProArea = () => {
   )
 */
   return (
-   <div className="relative pt-80">
+   <div className="relative pt-80 ">
     <A/>
     <div className="text-[150px] md:text-[300px] lg:text-[400px] grey h-[400px] flex items-center absolute top-10 -z-10">Works</div>
     <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5" >
     {
         data.data.projects.map(
             (pro)=>{
-                return <ProCard theme={pro.theme} src={pro.src}/>
+                return <ProCard theme={pro.theme} src={pro.src} url={pro.url}/>
             }
         )
     }

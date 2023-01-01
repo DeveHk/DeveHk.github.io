@@ -15,8 +15,8 @@ const Contact = ({ text }) => {
         },[]
     )
     return (
-        <div className="pt-16 opacity-0" ref={ti}>
-            <Btn text={text}/>
+        <div className="pt-16 opacity-0" ref={ti}  >
+            <Btn text={text} url={"mailto:harsh.kumar.ug21@nsut.ac.in"}/>
         </div>
     )
 }

@@ -140,7 +140,6 @@
   0%{
     opacity: 0;
     transform: scale(1);
-      
     top:150px
   }
   100%{
@@ -148,3 +147,30 @@
     top:0px;
   }
 }
+
+.resumeBox{
+  border: 4px solid rgb(255, 165, 0);
+  box-shadow:  0 0 5px #fff, 0 0 15px rgb(255, 165, 0), 0 0 20px rgb(188, 32, 69);
+  transform: rotate(45deg);
+  transition: box-shadow 1s, text-shadow 1s;
+}
+.resumeLink{
+  transform: rotate(-45deg);
+}
+.resumeBox-container:hover .resumeBox{
+  text-shadow: 0 0 40px rgb(255, 165, 0);
+  box-shadow: 0 0 40px rgb(255, 165, 0),0 0 5px #fff, 0 0 20px rgb(255, 165, 0) inset, 0 0 20px rgb(188, 32, 69);
+}
+
+.slide-res{
+  animation: slideres 0.5s ease-in 1 0s none;
+}
+@keyframes slideres {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+} 

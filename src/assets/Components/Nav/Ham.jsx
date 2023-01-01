@@ -6,7 +6,6 @@ const Ham = () => {
   const [l1, l2, l3, menu] = [useRef(''),useRef(''),useRef(''),useRef('')]
   const handelOnclick = (e) => {
   //  console.dir(menu.current.style.width)
-    e.preventDefault()
     if (!active) {
       l1.current.classList.add('rotate-45')
       l2.current.classList.add('-rotate-45')
@@ -26,8 +25,8 @@ const Ham = () => {
   }
   return (
     <div className=''>
-        <div className="fixed z-10 w-full hidden" ref={menu}>
-        <NavA/>
+        <div className="fixed z-10 w-full hidden"  ref={menu}>
+        <NavA clickhandel={handelOnclick}/>
       </div>
       <div onClick={handelOnclick} className=" fixed z-10 right-5 top-5 bg-slate- p-1 rounded-lg bg-[#6d68753d] ">
         <div className="h-10 space-y-[4.5px] pt-2 flex flex-col items-end">
