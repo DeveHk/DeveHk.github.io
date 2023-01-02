@@ -23,9 +23,10 @@ const Fullhead = () => {
       
       <Title />
       <Contact text={'Contact me!'}  />
-      <Resume/>
+      
     </div>
   )
+  //<Resume/>
 }
 
 export default Fullhead
