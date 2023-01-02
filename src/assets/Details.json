@@ -87,22 +87,22 @@
         ],
         "projects":[
             {
-                "src":"src/assets/typoProject.png",
+                "src":"https://raw.githubusercontent.com/DeveHk/DeveHk.github.io/main/src/assets/typoProject.png",
                 "theme":"rgb(14,98,194)",
                 "url":"https://speed-typo-game.netlify.app/"
             },
             {
-                "src":"src/assets/docProject.png",
+                "src":"https://raw.githubusercontent.com/DeveHk/DeveHk.github.io/main/src/assets/docProject.png",
                 "theme":"rgb(45,50,55)",
                 "url":"https://doc-extracter.netlify.app/"
             },
             {
-                "src":"src/assets/msbproject.png",
+                "src":"https://raw.githubusercontent.com/DeveHk/DeveHk.github.io/main/src/assets/msbproject.png",
                 "theme":"rgb(245,245,245)",
                 "url":"https://mb-microsoft.netlify.app/"
             },
             {
-                "src":"src/assets/spaceProject.png",
+                "src":"https://raw.githubusercontent.com/DeveHk/DeveHk.github.io/main/src/assets/spaceProject.png",
                 "theme":"rgb(127,127,127)",
                 "url":"https://space-site-frontend.netlify.app/"
             },

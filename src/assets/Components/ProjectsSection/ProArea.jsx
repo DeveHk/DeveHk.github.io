@@ -3,6 +3,8 @@ import ProCard from './ProCard'
 import data from  "../../Details.json"
 import Txt from '../Others/Txt'
 
+
+
 const ProArea = () => {
  /* const target=useRef("")
   useEffect(
